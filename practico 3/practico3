@@ -1,0 +1,162 @@
+mirco@fiocchi:~$ doker version
+No se ha encontrado la orden «doker», quizás quiso decir:
+ La orden «docker» del paquete «docker.io» (universe)
+doker: no se encontró la orden
+mirco@fiocchi:~$ docker version
+Client:
+ Version:           18.06.1-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        e68fc7a
+ Built:             Tue Aug 21 17:24:56 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.1-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       e68fc7a
+  Built:            Tue Aug 21 17:23:21 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+mirco@fiocchi:~$ sudo docker pull busybox
+sudo: imposible resolver el anfitrión fiocchi
+[sudo] password for mirco: 
+Using default tag: latest
+latest: Pulling from library/busybox
+Digest: sha256:cb63aa0641a885f54de20f61d152187419e8f6b159ed11a251a09d115fdff9bd
+Status: Image is up to date for busybox:latest
+mirco@fiocchi:~$ docker images
+REPOSITORY            TAG                 IMAGE ID            CREATED             SIZE
+busybox               latest              e1ddd7948a1c        3 weeks ago         1.16MB
+daviey/nyan-cat-web   latest              7a8914095b19        18 months ago       70.5MB
+mirco@fiocchi:~$ sudo docker images
+sudo: imposible resolver el anfitrión fiocchi
+REPOSITORY            TAG                 IMAGE ID            CREATED             SIZE
+busybox               latest              e1ddd7948a1c        3 weeks ago         1.16MB
+daviey/nyan-cat-web   latest              7a8914095b19        18 months ago       70.5MB
+mirco@fiocchi:~$ ^C
+mirco@fiocchi:~$ 
+mirco@fiocchi:~$ sudo docker run busybox
+sudo: imposible resolver el anfitrión fiocchi
+NO SALE NADA PORQUE NO LE INDIQUE NADA
+mirco@fiocchi:~$ sudo docker run busybox echo "Hola Mundo"
+sudo: imposible resolver el anfitrión fiocchi
+Hola Mundo
+mirco@fiocchi:~$mirco@fiocchi:~$ sudo docker ps -a
+sudo: imposible resolver el anfitrión fiocchi
+CONTAINER ID        IMAGE                 COMMAND                  CREATED              STATUS                          PORTS               NAMES
+815a2b434386        busybox               "echo 'Hola Mundo'"      About a minute ago   Exited (0) About a minute ago                       clever_pare
+21b2ab956992        busybox               "sh"                     About a minute ago   Exited (0) About a minute ago                       youthful_elion
+83d5d1095f9b        daviey/nyan-cat-web   "nginx -g 'daemon of…"   3 hours ago          Exited (0) 3 hours ago                              gallant_curran
+bf84a82363c8        busybox               "sh"                     3 hours ago          Exited (1) 3 hours ago                              fervent_joliot
+a5be6e7a3a67        busybox               "sh"                     3 hours ago          Exited (127) 3 hours ago                            competent_almeida
+cce4479d6828        busybox               "sh"                     3 hours ago          Exited (0) 3 hours ago                              heuristic_euclid
+ME MUESTRA LOS COMANDO QUE EJECUTE, EN EL MOMENTO QUE FUE CREADO CON SUS RESPECTIVOS HORARIOS Y SU NOMBRE, CON SU ESTADO.
+mirco@fiocchi:~$ 
+mirco@fiocchi:~$ sudo docker run -it busybox sh
+sudo: imposible resolver el anfitrión fiocchi
+/ # ps
+PID   USER     TIME  COMMAND
+    1 root      0:00 sh
+    7 root      0:00 ps
+/ # uptime
+ 01:55:42 up  1:45,  0 users,  load average: 0.39, 0.26, 0.38
+/ # free
+             total       used       free     shared    buffers     cached
+Mem:      16296072    4034456   12261616     573644     120708    1831200
+-/+ buffers/cache:    2082548   14213524
+Swap:     16645116          0   16645116
+/ # ls -l /
+total 36
+drwxr-xr-x    2 root     root         12288 Jul 31 20:20 bin
+drwxr-xr-x    5 root     root           360 Aug 28 01:55 dev
+drwxr-xr-x    3 root     root          4096 Aug 28 01:55 etc
+drwxr-xr-x    2 nobody   nogroup       4096 Jul 31 20:20 home
+dr-xr-xr-x  237 root     root             0 Aug 28 01:55 proc
+drwx------    2 root     root          4096 Aug 28 01:55 root
+dr-xr-xr-x   13 root     root             0 Aug 28 01:55 sys
+drwxrwxrwt    2 root     root          4096 Jul 31 20:20 tmp
+drwxr-xr-x    3 root     root          4096 Jul 31 20:20 usr
+drwxr-xr-x    4 root     root          4096 Jul 31 20:20 var
+/ # exit
+
+mirco@fiocchi:~$ sudo docker ps -a
+sudo: imposible resolver el anfitrión fiocchi
+CONTAINER ID        IMAGE                 COMMAND                  CREATED             STATUS                      PORTS               NAMES
+cc34f703a627        busybox               "sh"                     2 minutes ago       Exited (0) 2 minutes ago                        loving_joliot
+815a2b434386        busybox               "echo 'Hola Mundo'"      12 minutes ago      Exited (0) 12 minutes ago                       clever_pare
+21b2ab956992        busybox               "sh"                     12 minutes ago      Exited (0) 12 minutes ago                       youthful_elion
+83d5d1095f9b        daviey/nyan-cat-web   "nginx -g 'daemon of…"   3 hours ago         Exited (0) 3 hours ago                          gallant_curran
+bf84a82363c8        busybox               "sh"                     3 hours ago         Exited (1) 3 hours ago                          fervent_joliot
+a5be6e7a3a67        busybox               "sh"                     3 hours ago         Exited (127) 3 hours ago                        competent_almeida
+cce4479d6828        busybox               "sh"                     3 hours ago         Exited (0) 3 hours ago                          heuristic_euclid
+mirco@fiocchi:~$ docker rm elated_lalande
+Error: No such container: elated_lalande
+mirco@fiocchi:~$ sudo docker rm elated_lalande
+sudo: imposible resolver el anfitrión fiocchi
+Error: No such container: elated_lalande
+mirco@fiocchi:~$ docker container prune
+WARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+cc34f703a627ccb4b9b6ebc1ee1067d76219922411af0705af3e7d994806d728
+815a2b4343867345f9737b44d4f3f62e37c96cfeeae6a163379095bb473b0099
+21b2ab956992b66f2c6b55db0f7fc5601ff7418c16ea39d4c6ca382626cdc67d
+83d5d1095f9ba7a3ca25a41f3b92750efee79d6b3cd82a8b66547d914fd52165
+bf84a82363c8d58eb0a789b0a354282ebe637f11b51bb921eb9604bb8d7f6996
+a5be6e7a3a67855e278525f0466614b33a62e46a0938095388e07cf40c2336c7
+cce4479d68286b9e105d48330dd15eacff7281a65e5328a26ba6b143df1242d2
+
+Total reclaimed space: 151B
+mirco@fiocchi:~$ 
+mirco@fiocchi:~$ docker run
+"docker run" requires at least 1 argument.
+See 'docker run --help'.
+
+Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+
+Run a command in a new container
+mirco@fiocchi:~$ docker run -it -v
+flag needs an argument: 'v' in -v
+See 'docker run --help'.
+mirco@fiocchi:~$ docker run -it -v /home/mirco
+"docker run" requires at least 1 argument.
+See 'docker run --help'.
+
+Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+
+Run a command in a new container
+mirco@fiocchi:~$ clear
+
+mirco@fiocchi:~$ docker run -d daviey/nyan-cat-web
+344a781ada1d31d0f39e92de94e29abe743c496cb593350f1898aa6cd4208a56
+mirco@fiocchi:~$ docker ps
+CONTAINER ID        IMAGE                 COMMAND                  CREATED             STATUS              PORTS               NAMES
+344a781ada1d        daviey/nyan-cat-web   "nginx -g 'daemon of…"   9 seconds ago       Up 7 seconds        80/tcp, 443/tcp     awesome_murdock
+mirco@fiocchi:~$ docker kill compassionate_raman
+Error response from daemon: Cannot kill container: compassionate_raman: No such container: compassionate_raman
+mirco@fiocchi:~$ sudo docker kill compassionate_raman
+sudo: imposible resolver el anfitrión fiocchi
+Error response from daemon: Cannot kill container: compassionate_raman: No such container: compassionate_raman
+mirco@fiocchi:~$ docker rm compassionate_raman
+Error: No such container: compassionate_raman
+mirco@fiocchi:~$ docker run -d -p 80:80 daviey/nyan-cat-web
+4ec99d900a0787f975feb759e32810e603dcb9be396db1a3b15a7340e03cefa9
+mirco@fiocchi:~$ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
