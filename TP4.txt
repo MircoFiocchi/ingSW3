@@ -289,4 +289,100 @@ busybox               latest              e1ddd7948a1c        4 weeks ago       
 openjdk               8u171-jre-alpine    ccfb0c83b2fe        7 weeks ago         83MB
 daviey/nyan-cat-web   latest              7a8914095b19        18 months ago       70.5MB
 mirco@fiocchi:~/ing-software-3/trabajo-practico-04/java-docker$ 
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/java-docker$ npm install
+npm WARN saveError ENOENT: no such file or directory, open '/home/mirco/package.json'
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN enoent ENOENT: no such file or directory, open '/home/mirco/package.json'
+npm WARN mirco No description
+npm WARN mirco No repository field.
+npm WARN mirco No README data
+npm WARN mirco No license field.
+
+up to date in 3.542s
+found 0 vulnerabilities
+
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/java-docker$ from openjdk:8u171-jre-alpine
+from: can't read /var/mail/openjdk:8u171-jre-alpine
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/java-docker$ cd
+mirco@fiocchi:~$ from openjdk:8u171-jre-alpine
+from: can't read /var/mail/openjdk:8u171-jre-alpine
+mirco@fiocchi:~$ cd 
+.cache/            Desktop/           eclipse-workspace/ GNUstep/           .java/             .mysql/            Pictures/          .shutter/          .thumbnails/       
+.CLion2018.1/      Documentos/        Escritorio/        .gphoto/           .local/            .nano/             .pki/              .smartgit/         .thunderbird/      
+.compiz/           Documents/         .gconf/            helloworld/        .m2/               node_modules/      Plantillas/        snap/              .tooling/          
+.config/           Downloads/         git proyecto/      Imágenes/          .mozilla/          .npm/              Public/            .ssh/              untitled/          
+.dbus/             eclipse/           .gnome2/           .infinote-records/ Music/             .oracle_jre_usage/ Público/           .swt/              Videos/            
+Descargas/         .eclipse/          .gnupg/            ing-software-3/    Música/            .p2/               .rpmdb/            Templates/         Vídeos/            
+mirco@fiocchi:~$ cd ing-software-3/
+mirco@fiocchi:~/ing-software-3$ ls
+trabajo-practico-02  trabajo-practico-04
+mirco@fiocchi:~/ing-software-3$ cd trabajo-practico-04
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04$ ls
+java-docker  nodejs-docker
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04$ cd  nodejs-docker
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/nodejs-docker$ ls
+app.js  bin  Docker file  package.json  public  routes  views
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/nodejs-docker$ docker build -t test-node
+"docker build" requires exactly 1 argument.
+See 'docker build --help'.
+
+Usage:  docker build [OPTIONS] PATH | URL | -
+
+Build an image from a Dockerfile
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/nodejs-docker$ docker build -t test-node .
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /home/mirco/ing-software-3/trabajo-practico-04/nodejs-docker/Dockerfile: no such file or directory
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/nodejs-docker$ docker build -t test-node .
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /home/mirco/ing-software-3/trabajo-practico-04/nodejs-docker/Dockerfile: no such file or directory
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/nodejs-docker$ docker build -t test-node .
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /home/mirco/ing-software-3/trabajo-practico-04/nodejs-docker/Dockerfile: no such file or directory
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/nodejs-docker$ docker build -t test-node .
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /home/mirco/ing-software-3/trabajo-practico-04/nodejs-docker/Dockerfile: no such file or directory
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/nodejs-docker$ ls
+app.js  bin  Docker file  package.json  public  routes  views
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/nodejs-docker$ docker build -t test-node .
+Sending build context to Docker daemon  16.38kB
+Error response from daemon: Dockerfile parse error line 13: unknown instruction: CMD["NPM",
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/nodejs-docker$ docker build -t test-node .
+Sending build context to Docker daemon  16.38kB
+Error response from daemon: Dockerfile parse error line 13: unknown instruction: CMD[
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/nodejs-docker$ docker build -t test-node .
+Sending build context to Docker daemon  16.38kB
+Step 1/7 : FROM node:8.11-alpine
+ ---> e24de9a22ce3
+Step 2/7 : RUN mkdir/appnode
+ ---> Running in 4b1a5a4cde99
+/bin/sh: mkdir/appnode: not found
+The command '/bin/sh -c mkdir/appnode' returned a non-zero code: 127
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/nodejs-docker$ docker build -t test-node .
+Sending build context to Docker daemon  16.38kB
+Step 1/7 : FROM node:8.11-alpine
+ ---> e24de9a22ce3
+Step 2/7 : RUN mkdir /appnode
+ ---> Running in 1eff3e307aaf
+Removing intermediate container 1eff3e307aaf
+ ---> 853a7f317ad7
+Step 3/7 : ADD . /appnode
+ ---> 7b0cd8266de3
+Step 4/7 : WORKDIR /appnode
+ ---> Running in 19bad2c3f6ee
+Removing intermediate container 19bad2c3f6ee
+ ---> c696cf69ecb0
+Step 5/7 : RUN npm install
+ ---> Running in 51dff48e126a
+npm notice created a lockfile as package-lock.json. You should commit this file.
+added 55 packages in 5.197s
+Removing intermediate container 51dff48e126a
+ ---> 834a071b089e
+Step 6/7 : EXPOSE 3000
+ ---> Running in 81c676409a5e
+Removing intermediate container 81c676409a5e
+ ---> 054d27f8c48e
+Step 7/7 : CMD ["npm", "start"]
+ ---> Running in 038bd4a2cbcb
+Removing intermediate container 038bd4a2cbcb
+ ---> 647da221aaa2
+Successfully built 647da221aaa2
+Successfully tagged test-node:latest
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/nodejs-docker$ 
+
 
