@@ -1,0 +1,292 @@
+mirco@fiocchi:~$ mvn
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.081 s
+[INFO] Finished at: 2018-09-03T19:15:17-03:00
+[INFO] Final Memory: 7M/303M
+[INFO] ------------------------------------------------------------------------
+[ERROR] No goals have been specified for this build. You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/NoGoalSpecifiedException
+mirco@fiocchi:~$ dit
+No se ha encontrado la orden «dit» pero hay 24 similares
+dit: no se encontró la orden
+mirco@fiocchi:~$ dir
+apache-tomcat-9.0.10.tar.gz	Documents	   fiber-01.cap		   fiber-02.kismet.csv	   helloworld		Music			    Pictures		 Templates
+bcompare-4.2.6.23150_amd64.deb	Downloads	   fiber-01.csv		   fiber-02.kismet.netxml  Imágenes		Música			    Plantillas		 untitled
+CLA				eclipse		   fiber-01.kismet.csv	   get-docker.sh	   ing-software-3	node_modules		    Public		 Videos
+Descargas			eclipse-workspace  fiber-01.kismet.netxml  get-pip.py		   install_nvm.sh.save	nodesource_setup.sh	    Público		 Vídeos
+Desktop				Escritorio	   fiber-02.cap		   git\ proyecto	   io			nodesource_setup.sh.save    Python-3.6.3.tar.xz
+Documentos			examples.desktop   fiber-02.csv		   GNUstep		   mozilla.pdf		nodesource_setup.sh.save.1  snap
+mirco@fiocchi:~$ cd ing-software-3/
+mirco@fiocchi:~/ing-software-3$ dir
+trabajo-practico-02
+mirco@fiocchi:~/ing-software-3$ git pull
+remote: Counting objects: 36, done.
+remote: Compressing objects: 100% (19/19), done.
+remote: Total 36 (delta 2), reused 36 (delta 2), pack-reused 0
+Desempaquetando objetos: 100% (36/36), listo.
+Desde https://github.com/alexisfr/ing-software-3
+   4d30742..3d8a4a1  master     -> origin/master
+Actualizando 4d30742..3d8a4a1
+Fast-forward
+ trabajo-practico-04/java-docker/pom.xml                               | 49 +++++++++++++++++++++++++++++++++++++++++++++++++
+ trabajo-practico-04/java-docker/src/main/java/ar/edu/ucc/App.java     | 17 +++++++++++++++++
+ trabajo-practico-04/java-docker/src/test/java/ar/edu/ucc/AppTest.java | 38 ++++++++++++++++++++++++++++++++++++++
+ trabajo-practico-04/nodejs-docker/.dockerignore                       |  3 +++
+ trabajo-practico-04/nodejs-docker/app.js                              | 41 +++++++++++++++++++++++++++++++++++++++++
+ trabajo-practico-04/nodejs-docker/bin/www                             | 90 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ trabajo-practico-04/nodejs-docker/package.json                        | 16 ++++++++++++++++
+ trabajo-practico-04/nodejs-docker/public/stylesheets/style.css        |  8 ++++++++
+ trabajo-practico-04/nodejs-docker/routes/index.js                     |  9 +++++++++
+ trabajo-practico-04/nodejs-docker/routes/users.js                     |  9 +++++++++
+ trabajo-practico-04/nodejs-docker/views/error.ejs                     |  3 +++
+ trabajo-practico-04/nodejs-docker/views/index.ejs                     | 11 +++++++++++
+ 12 files changed, 294 insertions(+)
+ create mode 100644 trabajo-practico-04/java-docker/pom.xml
+ create mode 100644 trabajo-practico-04/java-docker/src/main/java/ar/edu/ucc/App.java
+ create mode 100644 trabajo-practico-04/java-docker/src/test/java/ar/edu/ucc/AppTest.java
+ create mode 100644 trabajo-practico-04/nodejs-docker/.dockerignore
+ create mode 100644 trabajo-practico-04/nodejs-docker/app.js
+ create mode 100644 trabajo-practico-04/nodejs-docker/bin/www
+ create mode 100644 trabajo-practico-04/nodejs-docker/package.json
+ create mode 100644 trabajo-practico-04/nodejs-docker/public/stylesheets/style.css
+ create mode 100644 trabajo-practico-04/nodejs-docker/routes/index.js
+ create mode 100644 trabajo-practico-04/nodejs-docker/routes/users.js
+ create mode 100644 trabajo-practico-04/nodejs-docker/views/error.ejs
+ create mode 100644 trabajo-practico-04/nodejs-docker/views/index.ejs
+mirco@fiocchi:~/ing-software-3$ cd trabajo-practico-04
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04$ fit
+No se ha encontrado la orden «fit», quizás quiso decir:
+ La orden «fis» del paquete «redboot-tools» (universe)
+ La orden «fim» del paquete «fim» (universe)
+ La orden «fmt» del paquete «coreutils» (main)
+ La orden «git» del paquete «git» (main)
+ La orden «fio» del paquete «fio» (universe)
+ La orden «fiz» del paquete «zoo» (universe)
+ La orden «fet» del paquete «fet» (universe)
+ La orden «vit» del paquete «vit» (universe)
+ La orden «fmit» del paquete «fmit» (universe)
+ La orden «wit» del paquete «wit» (universe)
+ La orden «nit» del paquete «python-nevow» (universe)
+ La orden «fid» del paquete «id-utils» (universe)
+fit: no se encontró la orden
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04$ dir
+java-docker  nodejs-docker
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04$ cd java-docker/
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/java-docker$ mvn package
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ejemplo 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/2.0/maven-shade-plugin-2.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/2.0/maven-shade-plugin-2.0.pom (8 KB at 2.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/2.0/maven-shade-plugin-2.0.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/2.0/maven-shade-plugin-2.0.jar (90 KB at 75.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.2.1/logback-classic-1.2.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.2.1/logback-classic-1.2.1.pom (13 KB at 15.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-parent/1.2.1/logback-parent-1.2.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-parent/1.2.1/logback-parent-1.2.1.pom (18 KB at 39.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.2.1/logback-core-1.2.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.2.1/logback-core-1.2.1.pom (5 KB at 9.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.pom (3 KB at 3.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.22/slf4j-parent-1.7.22.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.22/slf4j-parent-1.7.22.pom (14 KB at 25.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.2.1/logback-classic-1.2.1.jar
+Downloading: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.2.1/logback-core-1.2.1.jar
+Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.jar (41 KB at 23.7 KB/sec)
+Downloaded: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.2.1/logback-classic-1.2.1.jar (304 KB at 121.9 KB/sec)
+Downloaded: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.2.1/logback-core-1.2.1.jar (463 KB at 114.8 KB/sec)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ejemplo ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/mirco/ing-software-3/trabajo-practico-04/java-docker/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ ejemplo ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /home/mirco/ing-software-3/trabajo-practico-04/java-docker/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ejemplo ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/mirco/ing-software-3/trabajo-practico-04/java-docker/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ ejemplo ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /home/mirco/ing-software-3/trabajo-practico-04/java-docker/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ ejemplo ---
+[INFO] Surefire report directory: /home/mirco/ing-software-3/trabajo-practico-04/java-docker/target/surefire-reports
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.17/surefire-junit3-2.17.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.17/surefire-junit3-2.17.pom (2 KB at 1.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 1.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.17/surefire-junit3-2.17.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.17/surefire-junit3-2.17.jar (25 KB at 12.8 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ar.edu.ucc.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in ar.edu.ucc.AppTest
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ejemplo ---
+[INFO] Building jar: /home/mirco/ing-software-3/trabajo-practico-04/java-docker/target/ejemplo-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:2.0:shade (default) @ ejemplo ---
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.pom (4 KB at 3.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-compat/3.0/maven-compat-3.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-compat/3.0/maven-compat-3.0.pom (4 KB at 5.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.pom (2 KB at 4.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/1.0-beta-6/wagon-1.0-beta-6.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/1.0-beta-6/wagon-1.0-beta-6.pom (13 KB at 27.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.2/plexus-utils-1.4.2.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.2/plexus-utils-1.4.2.pom (2 KB at 5.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.1/plexus-utils-3.0.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.1/plexus-utils-3.0.1.pom (3 KB at 5.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.1/plexus-3.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.1/plexus-3.1.pom (19 KB at 42.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/asm/asm/3.3.1/asm-3.3.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/asm/asm/3.3.1/asm-3.3.1.pom (266 B at 0.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/asm/asm-parent/3.3.1/asm-parent-3.3.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/asm/asm-parent/3.3.1/asm-parent-3.3.1.pom (5 KB at 11.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/asm/asm-commons/3.3.1/asm-commons-3.3.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/asm/asm-commons/3.3.1/asm-commons-3.3.1.pom (417 B at 1.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/asm/asm-tree/3.3.1/asm-tree-3.3.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/asm/asm-tree/3.3.1/asm-tree-3.3.1.pom (406 B at 1.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1/jdom-1.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1/jdom-1.1.pom (3 KB at 4.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/2.0/maven-dependency-tree-2.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/2.0/maven-dependency-tree-2.0.pom (5 KB at 9.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.2.0/maven-project-2.2.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.2.0/maven-project-2.2.0.pom (3 KB at 6.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.2.0/maven-2.2.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.2.0/maven-2.2.0.pom (22 KB at 22.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.2.0/maven-settings-2.2.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.2.0/maven-settings-2.2.0.pom (3 KB at 4.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.2.0/maven-model-2.2.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.2.0/maven-model-2.2.0.pom (4 KB at 7.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.2.0/maven-profile-2.2.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.2.0/maven-profile-2.2.0.pom (3 KB at 5.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.2.0/maven-artifact-manager-2.2.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.2.0/maven-artifact-manager-2.2.0.pom (4 KB at 7.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.2.0/maven-repository-metadata-2.2.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.2.0/maven-repository-metadata-2.2.0.pom (2 KB at 3.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.2.0/maven-artifact-2.2.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.2.0/maven-artifact-2.2.0.pom (2 KB at 3.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.2.0/maven-plugin-registry-2.2.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.2.0/maven-plugin-registry-2.2.0.pom (2 KB at 3.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/vafer/jdependency/0.7/jdependency-0.7.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/vafer/jdependency/0.7/jdependency-0.7.pom (8 KB at 19.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/commons-io/commons-io/1.3.2/commons-io-1.3.2.pom
+Downloaded: https://repo.maven.apache.org/maven2/commons-io/commons-io/1.3.2/commons-io-1.3.2.pom (10 KB at 24.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/3/commons-parent-3.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/3/commons-parent-3.pom (12 KB at 28.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.jar
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.1/plexus-utils-3.0.1.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-compat/3.0/maven-compat-3.0.jar
+Downloading: https://repo.maven.apache.org/maven2/asm/asm-commons/3.3.1/asm-commons-3.3.1.jar
+Downloading: https://repo.maven.apache.org/maven2/asm/asm/3.3.1/asm-3.3.1.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.jar (52 KB at 65.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/asm/asm-tree/3.3.1/asm-tree-3.3.1.jar
+Downloaded: https://repo.maven.apache.org/maven2/asm/asm/3.3.1/asm-3.3.1.jar (43 KB at 28.0 KB/sec)
+Downloaded: https://repo.maven.apache.org/maven2/asm/asm-commons/3.3.1/asm-commons-3.3.1.jar (38 KB at 24.6 KB/sec)
+Downloaded: https://repo.maven.apache.org/maven2/asm/asm-tree/3.3.1/asm-tree-3.3.1.jar (22 KB at 13.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/2.0/maven-dependency-tree-2.0.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.2.0/maven-project-2.2.0.jar
+Downloading: https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1/jdom-1.1.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/2.0/maven-dependency-tree-2.0.jar (55 KB at 20.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.2.0/maven-profile-2.2.0.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.1/plexus-utils-3.0.1.jar (222 KB at 75.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.2.0/maven-artifact-manager-2.2.0.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-compat/3.0/maven-compat-3.0.jar (279 KB at 81.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.2.0/maven-plugin-registry-2.2.0.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1/jdom-1.1.jar (150 KB at 40.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/vafer/jdependency/0.7/jdependency-0.7.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.2.0/maven-profile-2.2.0.jar (35 KB at 9.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.2.0/maven-project-2.2.0.jar (153 KB at 40.0 KB/sec)
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.2.0/maven-artifact-manager-2.2.0.jar (64 KB at 16.4 KB/sec)
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.2.0/maven-plugin-registry-2.2.0.jar (30 KB at 6.9 KB/sec)
+Downloaded: https://repo.maven.apache.org/maven2/org/vafer/jdependency/0.7/jdependency-0.7.jar (12 KB at 2.6 KB/sec)
+Downloaded: https://repo.maven.apache.org/maven2/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar (86 KB at 17.0 KB/sec)
+[INFO] Including ch.qos.logback:logback-classic:jar:1.2.1 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-core:jar:1.2.1 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.22 in the shaded jar.
+[INFO] Replacing /home/mirco/ing-software-3/trabajo-practico-04/java-docker/target/ejemplo.jar with /home/mirco/ing-software-3/trabajo-practico-04/java-docker/target/ejemplo-1.0-SNAPSHOT-shaded.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 40.399 s
+[INFO] Finished at: 2018-09-03T19:17:08-03:00
+[INFO] Final Memory: 24M/235M
+[INFO] ------------------------------------------------------------------------
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/java-docker$ docker build -t test-java .
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /home/mirco/ing-software-3/trabajo-practico-04/java-docker/Dockerfile: no such file or directory
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/java-docker$ ls
+pom.xml  src  target
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/java-docker$ pwd
+/home/mirco/ing-software-3/trabajo-practico-04/java-docker
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/java-docker$ docker build -t test-java .
+Sending build context to Docker daemon  864.3kB
+Step 1/6 : FROM openjdk:8u171-jre-alpine
+ ---> ccfb0c83b2fe
+Step 2/6 : RUN apk add --no-cache bash
+ ---> Running in 2dd87e064386
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.8/community/x86_64/APKINDEX.tar.gz
+(1/5) Installing ncurses-terminfo-base (6.1_p20180818-r0)
+(2/5) Installing ncurses-terminfo (6.1_p20180818-r0)
+(3/5) Installing ncurses-libs (6.1_p20180818-r0)
+(4/5) Installing readline (7.0.003-r0)
+(5/5) Installing bash (4.4.19-r1)
+Executing bash-4.4.19-r1.post-install
+Executing busybox-1.28.4-r0.trigger
+OK: 90 MiB in 57 packages
+Removing intermediate container 2dd87e064386
+ ---> 3725f149a83f
+Step 3/6 : WORKDIR /opt
+ ---> Running in 4a3c04fbf0ee
+Removing intermediate container 4a3c04fbf0ee
+ ---> 5969a14a1806
+Step 4/6 : COPY target/ejemplo.jar .
+ ---> 2cc1b1b5fb5a
+Step 5/6 : ENV JAVA_OPTS="-Xms32m -Xmx128m"
+ ---> Running in 407b34904b4d
+Removing intermediate container 407b34904b4d
+ ---> 6bb7a4677d40
+Step 6/6 : ENTRYPOINT exec java $JAVA_OPTS -jar ejemplo.jar
+ ---> Running in 9a56c9e75cc7
+Removing intermediate container 9a56c9e75cc7
+ ---> 52c412eac3b3
+Successfully built 52c412eac3b3
+Successfully tagged test-java:latest
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/java-docker$ docker run test-java
+22:27:17.423 [main] INFO ar.edu.ucc.App - Hola Mundo!
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/java-docker$ docker images
+REPOSITORY            TAG                 IMAGE ID            CREATED             SIZE
+test-java             latest              52c412eac3b3        19 seconds ago      87.7MB
+node                  8.11-alpine         e24de9a22ce3        2 weeks ago         68.1MB
+jenkins/jenkins       lts                 74c174cc8e36        2 weeks ago         700MB
+busybox               latest              e1ddd7948a1c        4 weeks ago         1.16MB
+openjdk               8u171-jre-alpine    ccfb0c83b2fe        7 weeks ago         83MB
+daviey/nyan-cat-web   latest              7a8914095b19        18 months ago       70.5MB
+mirco@fiocchi:~/ing-software-3/trabajo-practico-04/java-docker$ 
+
