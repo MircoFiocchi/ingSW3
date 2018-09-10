@@ -1,0 +1,83 @@
+mirco@fiocchi:~$ sudo docker run -d -p 8080:8080 -p 50000:50000 -v ~/data/jenkins:/var/jenkins_home jenkins/jenkins:lts
+sudo: imposible resolver el anfitrión fiocchi
+[sudo] password for mirco: 
+65c1ab564343503c565fd654118705757b84730550a393d6bd8b7b2b5a68e3d4
+docker: Error response from daemon: driver failed programming external connectivity on endpoint gifted_nightingale (fd3e0ad58255dfc7bee7377cfcecec875dc74b31d49592d2e2b37fdbf3878624): Error starting userland proxy: listen tcp 0.0.0.0:8080: bind: address already in use.
+mirco@fiocchi:~$ docker kill
+"docker kill" requires at least 1 argument.
+See 'docker kill --help'.
+
+Usage:  docker kill [OPTIONS] CONTAINER [CONTAINER...]
+
+Kill one or more running containers
+mirco@fiocchi:~$ docker kill jenkins
+Error response from daemon: Cannot kill container: jenkins: No such container: jenkins
+mirco@fiocchi:~$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+mirco@fiocchi:~$ docker kill 
+"docker kill" requires at least 1 argument.
+See 'docker kill --help'.
+
+Usage:  docker kill [OPTIONS] CONTAINER [CONTAINER...]
+
+Kill one or more running containers
+mirco@fiocchi:~$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+mirco@fiocchi:~$ sudo docker run -d -p 8080:8080 -p 50000:50000 -v ~/data/jenkins:/var/jenkins_home jenkins/jenkins:lts
+sudo: imposible resolver el anfitrión fiocchi
+40f049f553090dc9121893f4e4cbecd042baa7c1967b1a9202e4d43dd97fc1d8
+docker: Error response from daemon: driver failed programming external connectivity on endpoint relaxed_wright (e311fad6ae2dfad622a08795dd6491df06711669c69ab3f5637a8b9a252ef29f): Error starting userland proxy: listen tcp 0.0.0.0:8080: bind: address already in use.
+mirco@fiocchi:~$ sudo docker run -d -p 8081:8080 -p 50000:50000 -v ~/data/jenkins:/var/jenkins_home jenkins/jenkins:lts
+sudo: imposible resolver el anfitrión fiocchi
+1e5286658f9d5b8abb4a15647274951c994914d54d0478fb130c7bfc06c267b3
+mirco@fiocchi:~$ mkdir -p ~/data/jenkins
+mirco@fiocchi:~$ chmod 777 -R /tmp/data
+chmod: no se puede acceder a '/tmp/data': No existe el archivo o el directorio
+mirco@fiocchi:~$ chmod 777 -R /tmp/data
+chmod: no se puede acceder a '/tmp/data': No existe el archivo o el directorio
+mirco@fiocchi:~$ sudo chmod 777 -R /tmp/data
+sudo: imposible resolver el anfitrión fiocchi
+[sudo] password for mirco: 
+chmod: no se puede acceder a '/tmp/data': No existe el archivo o el directorio
+mirco@fiocchi:~$ mkdir -p ~/tmp/data/jenkinsmirco@fiocchi:~$ su
+Contraseña: 
+root@fiocchi:/home/mirco# chmdod 77 -R /tmp/data
+No se ha encontrado la orden «chmdod», quizás quiso decir:
+ La orden «chmod» del paquete «coreutils» (main)
+chmdod: no se encontró la orden
+root@fiocchi:/home/mirco# ^C
+root@fiocchi:/home/mirco# exit
+exit
+mirco@fiocchi:~$ sudo chmod 777 /tmp/data
+sudo: imposible resolver el anfitrión fiocchi
+chmod: no se puede acceder a '/tmp/data': No existe el archivo o el directorio
+mirco@fiocchi:~$ 
+mirco@fiocchi:~$ mkdir -p /tmp/data/jenkins
+mirco@fiocchi:~$ sudo chmod 777 /tmp/data
+sudo: imposible resolver el anfitrión fiocchi
+mirco@fiocchi:~$ ls -l /tmp/data
+total 4
+drwxrwxr-x 2 mirco mirco 4096 sep 10 19:18 jenkins
+mirco@fiocchi:~$ sudo chmod 777 /tmp/data/jenkins
+sudo: imposible resolver el anfitrión fiocchi
+mirco@fiocchi:~$ ls -l /tmp/data
+total 4
+drwxrwxrwx 2 mirco mirco 4096 sep 10 19:18 jenkins
+mirco@fiocchi:~$ dokcer ps
+No se ha encontrado la orden «dokcer», quizás quiso decir:
+ La orden «docker» del paquete «docker.io» (universe)
+dokcer: no se encontró la orden
+mirco@fiocchi:~$ docker ps
+CONTAINER ID        IMAGE                 COMMAND                  CREATED             STATUS              PORTS                                              NAMES
+1e5286658f9d        jenkins/jenkins:lts   "/sbin/tini -- /usr/…"   37 minutes ago      Up 37 minutes       0.0.0.0:50000->50000/tcp, 0.0.0.0:8081->8080/tcp   romantic_beaver
+mirco@fiocchi:~$ docker kill romantic_beaver
+romantic_beaver
+mirco@fiocchi:~$ sudo docker run -d -p 8080:8081 -p 50000:50000 -v ~/tmp/data/jenkins:/var/jenkins_home jenkins/jenkins:lts
+sudo: imposible resolver el anfitrión fiocchi
+a7fb93a4a5325007db5bb8aabb21386476ae63964e61db1c3e06f637e542d497
+docker: Error response from daemon: driver failed programming external connectivity on endpoint xenodochial_jepsen (4975d66d78f1aa841ee8f16af75d244677121863fdfe97f0bd1317bfdd11e91b): Error starting userland proxy: listen tcp 0.0.0.0:8080: bind: address already in use.
+mirco@fiocchi:~$ sudo docker run -d -p 8081:8080 -p 50000:50000 -v ~/tmp/data/jenkins:/var/jenkins_home jenkins/jenkins:lts
+sudo: imposible resolver el anfitrión fiocchi
+2f0a1f68c2a8b2c8172101396ce9119f87fb2191884237ea7ddd211ab76c12ac
+mirco@fiocchi:~$ 
+
