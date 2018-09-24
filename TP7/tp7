@@ -1,0 +1,586 @@
+mirco@fiocchi:~$ git clone https://github.com/MircoFiocchi/java-projects.git
+Clonando en 'java-projects'...
+remote: Counting objects: 4741, done.
+remote: Compressing objects: 100% (2228/2228), done.
+remote: Total 4741 (delta 1539), reused 4741 (delta 1539), pack-reused 0
+Recibiendo objetos: 100% (4741/4741), 21.13 MiB | 311.00 KiB/s, listo.
+Resolviendo deltas: 100% (1539/1539), listo.
+mirco@fiocchi:~$ cd Escritorio/
+mirco@fiocchi:~/Escritorio$ ls
+ apache-ant-1.10.5
+ apache-ant-1.10.5-bin.zip
+'Captura de pantalla de 2018-09-10 19-47-10.png'
+'Captura de pantalla de 2018-09-10 19-49-24.png'
+ comprbante.pdf
+ ingSW3
+ main.pov
+ mirco
+ mozilla.pdf
+ prueba.py
+'TP 5'
+'WhatsApp Zip 2018-09-08 at 10.20.25'
+mirco@fiocchi:~/Escritorio$ git clone https://github.com/MircoFiocchi/java-projects.git
+Clonando en 'java-projects'...
+remote: Counting objects: 4741, done.
+remote: Compressing objects: 100% (2228/2228), done.
+remote: Total 4741 (delta 1539), reused 4741 (delta 1539), pack-reused 0
+Recibiendo objetos: 100% (4741/4741), 21.13 MiB | 212.00 KiB/s, listo.
+Resolviendo deltas: 100% (1539/1539), listo.
+mirco@fiocchi:~/Escritorio$ ls
+ apache-ant-1.10.5
+ apache-ant-1.10.5-bin.zip
+'Captura de pantalla de 2018-09-10 19-47-10.png'
+'Captura de pantalla de 2018-09-10 19-49-24.png'
+ comprbante.pdf
+ ingSW3
+ java-projects
+ main.pov
+ mirco
+ mozilla.pdf
+ prueba.py
+'TP 5'
+'WhatsApp Zip 2018-09-08 at 10.20.25'
+mirco@fiocchi:~/Escritorio$ cd java-projects/
+mirco@fiocchi:~/Escritorio/java-projects$ mvn sonar:sonar \
+>   -Dsonar.projectKey=MircoFiocchi_java-projects \
+>   -Dsonar.organization=mircofiocchi-github \
+>   -Dsonar.host.url=https://sonarcloud.io \
+>   -Dsonar.login=90fe9da11ede7dd0a5cebd3be8bfb943bfde29cb\
+> -Dmaven.test.failure.ignore=true
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Java Development Projects
+[INFO] algorithms-projects
+[INFO] codejam-projects
+[INFO] Java Projects
+[INFO] Java Basics
+[INFO] java based Browser
+[INFO] ldapconnect
+[INFO] scheduler
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Development Projects 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.5.0.1254:sonar (default-cli) @ development-java ---
+[INFO] User cache: /home/mirco/.sonar/cache
+[INFO] SonarQube version: 7.4.0
+[INFO] Default locale: "es_AR", source code encoding: "UTF-8"
+[INFO] Publish mode
+[INFO] Load global settings
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Java Development Projects .......................... FAILURE [  8.663 s]
+[INFO] algorithms-projects ................................ SKIPPED
+[INFO] codejam-projects ................................... SKIPPED
+[INFO] Java Projects ...................................... SKIPPED
+[INFO] Java Basics ........................................ SKIPPED
+[INFO] java based Browser ................................. SKIPPED
+[INFO] ldapconnect ........................................ SKIPPED
+[INFO] scheduler .......................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.668 s
+[INFO] Finished at: 2018-09-24T16:28:29-03:00
+[INFO] Final Memory: 34M/333M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.sonarsource.scanner.maven:sonar-maven-plugin:3.5.0.1254:sonar (default-cli) on project development-java: Not authorized. Please check the properties sonar.login and sonar.password. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+mirco@fiocchi:~/Escritorio/java-projects$ mvn sonar:sonar   -Dsonar.projectKey=MircoFiocchi_java-projects   -Dsonar.organization=mircofiocchi-github   -Dsonar.host.url=https://sonarcloud.io   - Dsonar.login=90fe9da11ede7dd0a5cebd3be8bfb943bfde29cb-Dmaven.test.failure.ignore=true
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Java Development Projects
+[INFO] algorithms-projects
+[INFO] codejam-projects
+[INFO] Java Projects
+[INFO] Java Basics
+[INFO] java based Browser
+[INFO] ldapconnect
+[INFO] scheduler
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Development Projects 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.5.0.1254:sonar (default-cli) @ development-java ---
+[INFO] User cache: /home/mirco/.sonar/cache
+[INFO] SonarQube version: 7.4.0
+[INFO] Default locale: "es_AR", source code encoding: "UTF-8"
+[INFO] Publish mode
+[INFO] Load global settings
+[INFO] Load global settings (done) | time=1655ms
+[INFO] Server id: BD367519-AWHW8ct9-T_TB3XqouNu
+[INFO] User cache: /home/mirco/.sonar/cache
+[INFO] Load/download plugins
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=460ms
+[INFO] Load/download plugins (done) | time=1425ms
+[INFO] Loaded core extensions: branch-scanner
+[INFO] Process project properties
+[INFO] Load project branches
+[INFO] Load project branches (done) | time=296ms
+[INFO] Load project pull requests
+[INFO] Load project pull requests (done) | time=278ms
+[INFO] Load branch configuration
+[INFO] Load branch configuration (done) | time=50ms
+[INFO] Load project repositories
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Skipping Java Development Projects
+[INFO] This project has been banned from the build due to previous failures.
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Java Development Projects .......................... FAILURE [ 10.321 s]
+[INFO] algorithms-projects ................................ SKIPPED
+[INFO] codejam-projects ................................... SKIPPED
+[INFO] Java Projects ...................................... SKIPPED
+[INFO] Java Basics ........................................ SKIPPED
+[INFO] java based Browser ................................. SKIPPED
+[INFO] ldapconnect ........................................ SKIPPED
+[INFO] scheduler .......................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.168 s
+[INFO] Finished at: 2018-09-24T16:28:51-03:00
+[INFO] Final Memory: 43M/534M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.sonarsource.scanner.maven:sonar-maven-plugin:3.5.0.1254:sonar (default-cli) on project development-java: You're only authorized to execute a local (preview) SonarQube analysis without pushing the results to the SonarQube server. Please contact your SonarQube administrator. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+mirco@fiocchi:~/Escritorio/java-projects$ mvn sonar:sonar \
+>   -Dsonar.projectKey=MircoFiocchi_java-projects \
+>   -Dsonar.organization=mircofiocchi-github \
+>   -Dsonar.host.url=https://sonarcloud.io \
+>   -Dsonar.login=90fe9da11ede7dd0a5cebd3be8bfb943bfde29cb\
+> 
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Java Development Projects
+[INFO] algorithms-projects
+[INFO] codejam-projects
+[INFO] Java Projects
+[INFO] Java Basics
+[INFO] java based Browser
+[INFO] ldapconnect
+[INFO] scheduler
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Development Projects 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.5.0.1254:sonar (default-cli) @ development-java ---
+[INFO] User cache: /home/mirco/.sonar/cache
+[INFO] SonarQube version: 7.4.0
+[INFO] Default locale: "es_AR", source code encoding: "UTF-8"
+[INFO] Publish mode
+[INFO] Load global settings
+[INFO] Load global settings (done) | time=1879ms
+[INFO] Server id: BD367519-AWHW8ct9-T_TB3XqouNu
+[INFO] User cache: /home/mirco/.sonar/cache
+[INFO] Load/download plugins
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=369ms
+[INFO] Load/download plugins (done) | time=426ms
+[INFO] Loaded core extensions: branch-scanner
+[INFO] Process project properties
+[INFO] Load project branches
+[INFO] Load project branches (done) | time=349ms
+[INFO] Load project pull requests
+[INFO] Load project pull requests (done) | time=320ms
+[INFO] Load branch configuration
+[INFO] Load branch configuration (done) | time=9ms
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=633ms
+[INFO] Execute project builders
+[INFO] Execute project builders (done) | time=1ms
+[INFO] Load quality profiles
+[INFO] Load quality profiles (done) | time=433ms
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=9855ms
+[INFO] Load metrics repository
+[INFO] Load metrics repository (done) | time=297ms
+[INFO] Project key: MircoFiocchi_java-projects
+[INFO] Project base dir: /home/mirco/Escritorio/java-projects
+[INFO] Organization key: mircofiocchi-github
+[INFO] -------------  Scan ldapconnect
+[INFO] Base dir: /home/mirco/Escritorio/java-projects/java-projects/ldapconnect
+[INFO] Working dir: /home/mirco/Escritorio/java-projects/java-projects/ldapconnect/target/sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Source encoding: UTF-8, default locale: es_AR
+[INFO] Load server rules
+[INFO] Load server rules (done) | time=3314ms
+[WARNING] Property 'sonar.abap.file.suffixes' is not declared as multi-values/property set but was read using 'getStringArray' method. The SonarQube plugin declaring this property should be updated.
+[INFO] Index files
+[INFO] 5 files indexed
+[INFO] Quality profile for java: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 8
+[INFO] JavaClasspath initialization
+[WARNING] Bytecode of dependencies was not provided for analysis of source files, you might end up with less precise results. Bytecode can be provided using sonar.java.libraries property
+[INFO] JavaClasspath initialization (done) | time=22ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=0ms
+[INFO] Java Main Files AST scan
+[INFO] 3 source files to be analyzed
+[INFO] 3/3 source files have been analyzed
+[INFO] Java Main Files AST scan (done) | time=964ms
+[INFO] Java Test Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] 1/1 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=95ms
+[INFO] Sensor JavaSquidSensor [java] (done) | time=1796ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] parsing [/home/mirco/Escritorio/java-projects/java-projects/ldapconnect/target/surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=1ms
+[INFO] Sensor JaCoCoSensor [java]
+[WARNING] Property 'sonar.jacoco.reportPath' is deprecated. Please use 'sonar.jacoco.reportPaths' instead.
+[INFO] JaCoCo UT report not found: '/home/mirco/Escritorio/java-projects/target/jacoco.exec'
+[INFO] Sensor JaCoCoSensor [java] (done) | time=1ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=1118ms
+[INFO] Sensor HTML [web]
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor HTML [web] (done) | time=41ms
+[INFO] Sensor XML Sensor [xml]
+[WARNING] Metric 'comment_lines_data' is deprecated. Provided value is ignored.
+[INFO] Sensor XML Sensor [xml] (done) | time=124ms
+[INFO] SCM provider for this project is: git
+[INFO] 5 files to be analyzed
+[INFO] 5/5 files analyzed
+[INFO] -------------  Scan scheduler
+[INFO] Base dir: /home/mirco/Escritorio/java-projects/java-projects/scheduler
+[INFO] Working dir: /home/mirco/Escritorio/java-projects/java-projects/scheduler/target/sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Source encoding: UTF-8, default locale: es_AR
+[WARNING] Property 'sonar.abap.file.suffixes' is not declared as multi-values/property set but was read using 'getStringArray' method. The SonarQube plugin declaring this property should be updated.
+[INFO] Index files
+[INFO] 5 files indexed
+[INFO] Quality profile for java: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 8
+[INFO] JavaClasspath initialization
+[WARNING] Bytecode of dependencies was not provided for analysis of source files, you might end up with less precise results. Bytecode can be provided using sonar.java.libraries property
+[INFO] JavaClasspath initialization (done) | time=1ms
+[INFO] JavaTestClasspath initialization
+[WARNING] Bytecode of dependencies was not provided for analysis of test files, you might end up with less precise results. Bytecode can be provided using sonar.java.test.libraries property
+[INFO] JavaTestClasspath initialization (done) | time=0ms
+[INFO] Java Main Files AST scan
+[INFO] 3 source files to be analyzed
+[INFO] 3/3 source files have been analyzed
+[INFO] Java Main Files AST scan (done) | time=3091ms
+[INFO] Java Test Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] Java Test Files AST scan (done) | time=104ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor JavaSquidSensor [java] (done) | time=3203ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] parsing [/home/mirco/Escritorio/java-projects/java-projects/scheduler/target/surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=0ms
+[INFO] Sensor JaCoCoSensor [java]
+[WARNING] Property 'sonar.jacoco.reportPath' is deprecated. Please use 'sonar.jacoco.reportPaths' instead.
+[INFO] JaCoCo UT report not found: '/home/mirco/Escritorio/java-projects/target/jacoco.exec'
+[INFO] Sensor JaCoCoSensor [java] (done) | time=1ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=188ms
+[INFO] Sensor HTML [web]
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor HTML [web] (done) | time=1ms
+[INFO] Sensor XML Sensor [xml]
+[WARNING] Metric 'comment_lines_data' is deprecated. Provided value is ignored.
+[INFO] Sensor XML Sensor [xml] (done) | time=9ms
+[INFO] SCM provider for this project is: git
+[INFO] 5 files to be analyzed
+[INFO] 5/5 files analyzed
+[INFO] -------------  Scan java based Browser
+[INFO] Base dir: /home/mirco/Escritorio/java-projects/java-projects/browser
+[INFO] Working dir: /home/mirco/Escritorio/java-projects/java-projects/browser/target/sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Source encoding: UTF-8, default locale: es_AR
+[WARNING] Property 'sonar.abap.file.suffixes' is not declared as multi-values/property set but was read using 'getStringArray' method. The SonarQube plugin declaring this property should be updated.
+[INFO] Index files
+[INFO] 6 files indexed
+[INFO] Quality profile for java: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 8
+[INFO] JavaClasspath initialization
+[WARNING] Bytecode of dependencies was not provided for analysis of source files, you might end up with less precise results. Bytecode can be provided using sonar.java.libraries property
+[INFO] JavaClasspath initialization (done) | time=0ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=1ms
+[INFO] Java Main Files AST scan
+[INFO] 4 source files to be analyzed
+[INFO] 4/4 source files have been analyzed
+[INFO] Java Main Files AST scan (done) | time=667ms
+[INFO] Java Test Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] 1/1 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=14ms
+[INFO] Sensor JavaSquidSensor [java] (done) | time=694ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] parsing [/home/mirco/Escritorio/java-projects/java-projects/browser/target/surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=0ms
+[INFO] Sensor JaCoCoSensor [java]
+[WARNING] Property 'sonar.jacoco.reportPath' is deprecated. Please use 'sonar.jacoco.reportPaths' instead.
+[INFO] JaCoCo UT report not found: '/home/mirco/Escritorio/java-projects/target/jacoco.exec'
+[INFO] Sensor JaCoCoSensor [java] (done) | time=0ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=54ms
+[INFO] Sensor HTML [web]
+[INFO] Sensor HTML [web] (done) | time=0ms
+[INFO] Sensor XML Sensor [xml]
+[WARNING] Metric 'comment_lines_data' is deprecated. Provided value is ignored.
+[INFO] Sensor XML Sensor [xml] (done) | time=8ms
+[INFO] SCM provider for this project is: git
+[INFO] 6 files to be analyzed
+[INFO] 6/6 files analyzed
+[INFO] -------------  Scan Java Basics
+[INFO] Base dir: /home/mirco/Escritorio/java-projects/java-projects/basics
+[INFO] Working dir: /home/mirco/Escritorio/java-projects/java-projects/basics/target/sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Source encoding: UTF-8, default locale: es_AR
+[WARNING] Property 'sonar.abap.file.suffixes' is not declared as multi-values/property set but was read using 'getStringArray' method. The SonarQube plugin declaring this property should be updated.
+[INFO] Index files
+[INFO] 255 files indexed
+[INFO] Quality profile for java: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 8
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=0ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=0ms
+[INFO] Java Main Files AST scan
+[INFO] 218 source files to be analyzed
+[INFO] 189/218 files analyzed, current file: /home/mirco/Escritorio/java-projects/java-projects/basics/src/main/java/com/rajendarreddyj/basics/swing/demo/JTabbedPaneDemo.java
+[INFO] 218/218 source files have been analyzed
+[INFO] Java Main Files AST scan (done) | time=12213ms
+[INFO] Java Test Files AST scan
+[INFO] 34 source files to be analyzed
+[INFO] 34/34 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=875ms
+[INFO] Sensor JavaSquidSensor [java] (done) | time=13518ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] parsing [/home/mirco/Escritorio/java-projects/java-projects/basics/target/surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=0ms
+[INFO] Sensor JaCoCoSensor [java]
+[WARNING] Property 'sonar.jacoco.reportPath' is deprecated. Please use 'sonar.jacoco.reportPaths' instead.
+[INFO] JaCoCo UT report not found: '/home/mirco/Escritorio/java-projects/target/jacoco.exec'
+[INFO] Sensor JaCoCoSensor [java] (done) | time=0ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 2 source files to be analyzed
+[INFO] 2/2 source files have been analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=57ms
+[INFO] Sensor HTML [web]
+[INFO] Sensor HTML [web] (done) | time=1ms
+[INFO] Sensor XML Sensor [xml]
+[WARNING] Metric 'comment_lines_data' is deprecated. Provided value is ignored.
+[INFO] Sensor XML Sensor [xml] (done) | time=30ms
+[INFO] SCM provider for this project is: git
+[INFO] 255 files to be analyzed
+[INFO] 255/255 files analyzed
+[INFO] -------------  Scan Java Projects
+[INFO] Base dir: /home/mirco/Escritorio/java-projects/java-projects
+[INFO] Working dir: /home/mirco/Escritorio/java-projects/java-projects/target/sonar
+[INFO] Source paths: pom.xml
+[INFO] Source encoding: UTF-8, default locale: es_AR
+[WARNING] Property 'sonar.abap.file.suffixes' is not declared as multi-values/property set but was read using 'getStringArray' method. The SonarQube plugin declaring this property should be updated.
+[INFO] Index files
+[INFO] 1 file indexed
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=44ms
+[INFO] Sensor HTML [web]
+[INFO] Sensor HTML [web] (done) | time=0ms
+[INFO] Sensor XML Sensor [xml]
+[WARNING] Metric 'comment_lines_data' is deprecated. Provided value is ignored.
+[INFO] Sensor XML Sensor [xml] (done) | time=5ms
+[INFO] SCM provider for this project is: git
+[INFO] 1 files to be analyzed
+[INFO] 1/1 files analyzed
+[INFO] -------------  Scan codejam-projects
+[INFO] Base dir: /home/mirco/Escritorio/java-projects/codejam-projects
+[INFO] Working dir: /home/mirco/Escritorio/java-projects/codejam-projects/target/sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Source encoding: UTF-8, default locale: es_AR
+[WARNING] Property 'sonar.abap.file.suffixes' is not declared as multi-values/property set but was read using 'getStringArray' method. The SonarQube plugin declaring this property should be updated.
+[INFO] Index files
+[INFO] 10 files indexed
+[INFO] Quality profile for java: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 8
+[INFO] JavaClasspath initialization
+[WARNING] Bytecode of dependencies was not provided for analysis of source files, you might end up with less precise results. Bytecode can be provided using sonar.java.libraries property
+[INFO] JavaClasspath initialization (done) | time=0ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=0ms
+[INFO] Java Main Files AST scan
+[INFO] 3 source files to be analyzed
+[INFO] Java Main Files AST scan (done) | time=519ms
+[INFO] Java Test Files AST scan
+[INFO] 3/3 source files have been analyzed
+[INFO] 0 source files to be analyzed
+[INFO] Java Test Files AST scan (done) | time=3ms
+[INFO] 0/0 source files have been analyzed
+[INFO] Sensor JavaSquidSensor [java] (done) | time=529ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] parsing [/home/mirco/Escritorio/java-projects/codejam-projects/target/surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=0ms
+[INFO] Sensor JaCoCoSensor [java]
+[WARNING] Property 'sonar.jacoco.reportPath' is deprecated. Please use 'sonar.jacoco.reportPaths' instead.
+[INFO] JaCoCo UT report not found: '/home/mirco/Escritorio/java-projects/target/jacoco.exec'
+[INFO] Sensor JaCoCoSensor [java] (done) | time=1ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=47ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor HTML [web]
+[INFO] Sensor HTML [web] (done) | time=0ms
+[INFO] Sensor XML Sensor [xml]
+[WARNING] Metric 'comment_lines_data' is deprecated. Provided value is ignored.
+[INFO] Sensor XML Sensor [xml] (done) | time=5ms
+[INFO] SCM provider for this project is: git
+[INFO] 4 files to be analyzed
+[INFO] 4/4 files analyzed
+[INFO] -------------  Scan algorithms-projects
+[INFO] Base dir: /home/mirco/Escritorio/java-projects/algorithms-projects
+[INFO] Working dir: /home/mirco/Escritorio/java-projects/algorithms-projects/target/sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Source encoding: UTF-8, default locale: es_AR
+[WARNING] Property 'sonar.abap.file.suffixes' is not declared as multi-values/property set but was read using 'getStringArray' method. The SonarQube plugin declaring this property should be updated.
+[INFO] Index files
+[INFO] 3 files indexed
+[INFO] Quality profile for java: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 8
+[INFO] JavaClasspath initialization
+[WARNING] Bytecode of dependencies was not provided for analysis of source files, you might end up with less precise results. Bytecode can be provided using sonar.java.libraries property
+[INFO] JavaClasspath initialization (done) | time=0ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=1ms
+[INFO] Java Main Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] Java Main Files AST scan (done) | time=28ms
+[INFO] Java Test Files AST scan
+[INFO] 1/1 source files have been analyzed
+[INFO] 1 source files to be analyzed
+[INFO] Java Test Files AST scan (done) | time=24ms
+[INFO] Sensor JavaSquidSensor [java] (done) | time=58ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] parsing [/home/mirco/Escritorio/java-projects/algorithms-projects/target/surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=0ms
+[INFO] Sensor JaCoCoSensor [java]
+[WARNING] Property 'sonar.jacoco.reportPath' is deprecated. Please use 'sonar.jacoco.reportPaths' instead.
+[INFO] JaCoCo UT report not found: '/home/mirco/Escritorio/java-projects/target/jacoco.exec'
+[INFO] Sensor JaCoCoSensor [java] (done) | time=1ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1/1 source files have been analyzed
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=42ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor HTML [web]
+[INFO] Sensor HTML [web] (done) | time=1ms
+[INFO] Sensor XML Sensor [xml]
+[WARNING] Metric 'comment_lines_data' is deprecated. Provided value is ignored.
+[INFO] Sensor XML Sensor [xml] (done) | time=5ms
+[INFO] SCM provider for this project is: git
+[INFO] 3 files to be analyzed
+[INFO] 3/3 files analyzed
+[INFO] -------------  Scan Java Development Projects
+[INFO] Base dir: /home/mirco/Escritorio/java-projects
+[INFO] Working dir: /home/mirco/Escritorio/java-projects/target/sonar
+[INFO] Source paths: pom.xml
+[INFO] Source encoding: UTF-8, default locale: es_AR
+[WARNING] Property 'sonar.abap.file.suffixes' is not declared as multi-values/property set but was read using 'getStringArray' method. The SonarQube plugin declaring this property should be updated.
+[INFO] Index files
+[INFO] 1 file indexed
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=45ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor HTML [web]
+[INFO] Sensor HTML [web] (done) | time=0ms
+[INFO] Sensor XML Sensor [xml]
+[WARNING] Metric 'comment_lines_data' is deprecated. Provided value is ignored.
+[INFO] Sensor XML Sensor [xml] (done) | time=7ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=148ms
+[INFO] Sensor JavaSecuritySensor [security]
+[INFO] UCFGs: 874, excluded: 874, source entrypoints: 0
+[INFO] No UCFGs have been included for analysis.
+[INFO] Sensor JavaSecuritySensor [security] (done) | time=279ms
+[INFO] Sensor CSharpSecuritySensor [security]
+[INFO] UCFGs: 0, excluded: 0, source entrypoints: 0
+[INFO] No UCFGs have been included for analysis.
+[INFO] Sensor CSharpSecuritySensor [security] (done) | time=0ms
+[INFO] Sensor Java CPD Block Indexer
+[INFO] Sensor Java CPD Block Indexer (done) | time=228ms
+[INFO] SCM provider for this project is: git
+[INFO] 1 files to be analyzed
+[INFO] 1/1 files analyzed
+[INFO] 57 files had no CPD blocks
+[INFO] Calculating CPD for 175 files
+[INFO] CPD calculation finished
+[INFO] Analysis report generated in 455ms, dir size=1 MB
+[INFO] Analysis reports compressed in 343ms, zip size=980 KB
+[INFO] Analysis report uploaded in 22878ms
+[INFO] ANALYSIS SUCCESSFUL, you can browse https://sonarcloud.io/dashboard?id=MircoFiocchi_java-projects
+[INFO] Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] More about the report processing at https://sonarcloud.io/api/ce/task?id=AWYNtJGWHR8j8dJrYEpw
+[INFO] Task total time: 1:08.681 s
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Java Development Projects .......................... SUCCESS [01:15 min]
+[INFO] algorithms-projects ................................ SKIPPED
+[INFO] codejam-projects ................................... SKIPPED
+[INFO] Java Projects ...................................... SKIPPED
+[INFO] Java Basics ........................................ SKIPPED
+[INFO] java based Browser ................................. SKIPPED
+[INFO] ldapconnect ........................................ SKIPPED
+[INFO] scheduler .......................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:16 min
+[INFO] Finished at: 2018-09-24T16:30:30-03:00
+[INFO] Final Memory: 71M/1581M
+[INFO] ------------------------------------------------------------------------
+mirco@fiocchi:~/Escritorio/java-projects$ 
+
